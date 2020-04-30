@@ -1,0 +1,63 @@
+
+@import '../../variables.scss';
+
+.mainContainer {
+  width: 800px;
+  margin: 200px auto;
+
+  .searchTitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .searchContainer {
+    display: flex;
+    text-align: left;
+  }
+  
+  .buttonContainer {
+    width: 20%;
+    .button {
+      background-color: $buttonColor;
+      border: none;
+      border-radius: 5px;
+      color: #FFF;
+      height: 60px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+.addressContainer {
+  width: 50%;
+  .address {
+    position: relative;
+  }
+
+  .input {
+    padding-left: 100px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+}
+
+.typeContainer {
+  width: 35%;
+  .input {
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+.inputContainer{
+  &.address {
+    width: 400px;
+  }
+  &.type {
+    width: 250px;
+  }
+    .input {
+      width: 100%;
+      height: 60px;
+      border: none;
+    }
+  }
+}

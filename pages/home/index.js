@@ -1,7 +1,6 @@
 import React from "react";
-// import HeadTag from "../../components/Head";
 import styles from './styles.scss';
-
+import Header from '../../components/Header';
 class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -11,8 +10,7 @@ class Index extends React.Component {
   render() {
     return (
       <div>
-        {/* <HeadTag /> */}
-        <h1 className={styles.title}>Pedidos YA</h1>
+        <Header backgroundImg="https://images.deliveryhero.io/image/pedidosya/home-backgrounds/home-background-ar.jpg" />
       </div>
     );
   }

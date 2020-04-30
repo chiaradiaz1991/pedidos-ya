@@ -1,0 +1,23 @@
+
+.nav {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  .logoContainer {
+    width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .listContainer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li {
+      margin: 0 10px;
+      color: #FFFFFF;
+    }
+  }
+}

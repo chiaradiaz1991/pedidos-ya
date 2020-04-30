@@ -29,6 +29,11 @@ app.prepare().then(() => {
     return app.render(req, res, "/home")
   });
 
+  server.get("/list", (req, res) => {
+    return app.render(req, res, "/list")
+  });
+
+
   server.get("*", (req, res) => {
     return handle(req, res);
   });

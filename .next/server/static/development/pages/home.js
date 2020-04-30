@@ -93,6 +93,246 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/Header/index.js":
+/*!************************************!*\
+  !*** ./components/Header/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./components/Header/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../NavBar */ "./components/NavBar/index.js");
+/* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Search */ "./components/Search/index.js");
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return __jsx("header", {
+      style: {
+        backgroundImage: `url(${this.props.backgroundImg})`
+      },
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header
+    }, __jsx(_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), __jsx(_Search__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }
+
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Header/styles.scss":
+/*!***************************************!*\
+  !*** ./components/Header/styles.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"header": "header__3H5Ff"
+};
+
+/***/ }),
+
+/***/ "./components/NavBar/index.js":
+/*!************************************!*\
+  !*** ./components/NavBar/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./components/NavBar/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class NavBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return __jsx("nav", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.nav
+    }, __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.logoContainer
+    }, __jsx("img", {
+      src: "https://live.pystatic.com/webassets/common/logo-es-3f7be267ae60c49c55f747799efa5753.svg"
+    })), __jsx("ul", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.listContainer
+    }, __jsx("li", null, "Ayuda en l\xEDnea"), __jsx("li", null, "Registrarse"), __jsx("li", null, "Ingres\xE1")));
+  }
+
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (NavBar);
+
+/***/ }),
+
+/***/ "./components/NavBar/styles.scss":
+/*!***************************************!*\
+  !*** ./components/NavBar/styles.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"nav": "nav__2qgx5",
+	"logoContainer": "logoContainer__3-KFp",
+	"listContainer": "listContainer__37aut"
+};
+
+/***/ }),
+
+/***/ "./components/Search/index.js":
+/*!************************************!*\
+  !*** ./components/Search/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./components/Search/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _SelectZone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SelectZone */ "./components/SelectZone/index.js");
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+class Search extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.mainContainer
+    }, __jsx("h2", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.searchTitle
+    }, "\xA1Vol\xE1 con tu delivery online!"), __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.searchContainer
+    }, __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.addressContainer
+    }, __jsx("label", null, "Direcci\xF3n de entrega"), __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.address
+    }, __jsx("i", null), __jsx(_SelectZone__WEBPACK_IMPORTED_MODULE_2__["default"], null), __jsx("input", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.input,
+      placeholder: "calle y n\xFAmero",
+      type: "text"
+    }))), __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.typeContainer
+    }, __jsx("label", null, "Restaurante o comida r\xE1pida"), __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.type
+    }, __jsx("i", null), __jsx("input", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.input,
+      placeholder: "pizza",
+      type: "text"
+    }))), __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.buttonContainer
+    }, __jsx("button", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.button
+    }, "Buscar"))));
+  }
+
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (Search);
+
+/***/ }),
+
+/***/ "./components/Search/styles.scss":
+/*!***************************************!*\
+  !*** ./components/Search/styles.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"mainContainer": "mainContainer__1_AWG",
+	"searchTitle": "searchTitle__3KSC0",
+	"searchContainer": "searchContainer__mbAix",
+	"buttonContainer": "buttonContainer__92r50",
+	"button": "button__23yYX",
+	"addressContainer": "addressContainer__3DVdI",
+	"address": "address__3V_nb",
+	"input": "input__1YBTe",
+	"typeContainer": "typeContainer__1SEro",
+	"inputContainer": "inputContainer__2T6SI",
+	"type": "type__3s58A"
+};
+
+/***/ }),
+
+/***/ "./components/SelectZone/index.js":
+/*!****************************************!*\
+  !*** ./components/SelectZone/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./components/SelectZone/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class SelectZone extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.zones = ['Capital Federal', 'Zona Norte', 'Zona Sur'];
+    this.state = {
+      selectedZone: this.zones[0]
+    };
+  }
+
+  render() {
+    const {
+      selectedZone
+    } = this.state;
+    return __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.selectedZoneContainer
+    }, __jsx("div", {
+      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.selectedZone
+    }, __jsx("span", null, selectedZone)));
+  }
+
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (SelectZone);
+
+/***/ }),
+
+/***/ "./components/SelectZone/styles.scss":
+/*!*******************************************!*\
+  !*** ./components/SelectZone/styles.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"selectedZoneContainer": "selectedZoneContainer__2SMPj"
+};
+
+/***/ }),
+
 /***/ "./pages/home/index.js":
 /*!*****************************!*\
   !*** ./pages/home/index.js ***!
@@ -106,8 +346,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./pages/home/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Header */ "./components/Header/index.js");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
- // import HeadTag from "../../components/Head";
+
 
 
 
@@ -118,9 +359,9 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   render() {
-    return __jsx("div", null, __jsx("h1", {
-      className: _styles_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title
-    }, "Pedidos YA"));
+    return __jsx("div", null, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      backgroundImg: "https://images.deliveryhero.io/image/pedidosya/home-backgrounds/home-background-ar.jpg"
+    }));
   }
 
 }
