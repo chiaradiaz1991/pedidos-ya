@@ -9,15 +9,25 @@ const handle = app.getRequestHandler();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const path = require("path");
+const mongoose = require("mongoose");
 
 app.prepare().then(() => {
   const server = express();
+
+  mongoose.connect("mongodb://localhost:27017/pedidosya", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
   server.use(compression());
   server.use(express.static(__dirname + "/static", { maxAge: 86400000 }));
   server.use(bodyParser.json());
   server.use(bodyParser.urlencoded({ extended: false }));
   server.use(cookieParser());
+
+  server.get("/", (req, res) => {
+    return app.render(req, res, "/home")
+  });
 
   server.get("*", (req, res) => {
     return handle(req, res);
