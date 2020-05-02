@@ -1,76 +1,8 @@
-
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap);
 body {
   margin: 0;
   padding: 0;
-}
-
-.header__3H5Ff {
-  width: 100%;
-  height: 800px;
-  background-size: cover; }
-
-.nav__2qgx5 {
-  margin: 0 auto;
-  max-width: 1000px;
-  display: flex;
-  justify-content: space-between; }
-  .nav__2qgx5 .logoContainer__3-KFp {
-    width: 150px; }
-    .nav__2qgx5 .logoContainer__3-KFp img {
-      width: 100%; }
-  .nav__2qgx5 .listContainer__37aut {
-    list-style: none;
-    display: flex;
-    flex-direction: row; }
-    .nav__2qgx5 .listContainer__37aut li {
-      margin: 0 10px;
-      color: #FFFFFF; }
-
-.mainContainer__1_AWG {
-  width: 800px;
-  margin: 200px auto; }
-  .mainContainer__1_AWG .searchTitle__3KSC0 {
-    color: #FFF;
-    text-align: center;
-    font-size: 40px; }
-  .mainContainer__1_AWG .searchContainer__mbAix {
-    display: flex;
-    text-align: left; }
-  .mainContainer__1_AWG .buttonContainer__92r50 {
-    width: 20%; }
-    .mainContainer__1_AWG .buttonContainer__92r50 .button__23yYX {
-      background-color: #F52F41;
-      border: none;
-      border-radius: 5px;
-      color: #FFF;
-      height: 60px;
-      font-size: 18px;
-      cursor: pointer; }
-  .mainContainer__1_AWG .addressContainer__3DVdI {
-    width: 50%; }
-    .mainContainer__1_AWG .addressContainer__3DVdI .address__3V_nb {
-      position: relative; }
-    .mainContainer__1_AWG .addressContainer__3DVdI .input__1YBTe {
-      padding-left: 100px;
-      border-radius: 5px 0px 0px 5px; }
-  .mainContainer__1_AWG .typeContainer__1SEro {
-    width: 35%; }
-    .mainContainer__1_AWG .typeContainer__1SEro .input__1YBTe {
-      border-radius: 0px 5px 5px 0px; }
-  .mainContainer__1_AWG .inputContainer__2T6SI.address__3V_nb {
-    width: 400px; }
-  .mainContainer__1_AWG .inputContainer__2T6SI.type__3s58A {
-    width: 250px; }
-  .mainContainer__1_AWG .inputContainer__2T6SI .input__1YBTe {
-    width: 100%;
-    height: 60px;
-    border: none; }
-
-.selectedZoneContainer__2SMPj {
-  position: absolute;
-  top: 0px;
-  z-index: 2;
-  color: black; }
+  font-family: "Lato", sans-serif; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

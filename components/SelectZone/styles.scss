@@ -1,7 +1,23 @@
 
 .selectedZoneContainer {
   position: absolute;
-  top: 0px;
+  top: 15px;
   z-index: 2;
   color: black;
+  padding: 5px 10px;
+  background-color: #f7f8f8;
+  cursor: pointer;
+  user-select: none;
+
+  .listContainer {
+    display: none;
+    ul {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+    &.visible {
+      display: block;
+    }
+  }
 }
