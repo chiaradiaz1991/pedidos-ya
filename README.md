@@ -1,5 +1,7 @@
 # Pedidos ya delivery page
 
 Technologies:
--ReactJs Hooks
+-ReactJs
 -NextJs
+-Mongo DB
+-Express Js
