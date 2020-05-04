@@ -5,15 +5,24 @@ import styles from './styles.scss';
 class SelectZone extends React.Component {
   constructor(props) {
     super(props);
-
-    this.zones = ['Capital Federal', 'Zona Norte', 'Zona Sur', 'Campana'];
-
     this.state = {
-      selectedZone: this.zones[0],
+      selectedZone: "",
       active: false,
-      zones: this.zones,
+      initialZones: [],
+      zones: [],
       inputValue: '',
     };
+  }
+
+  async componentDidMount() {
+    const getZones = await fetch('http://localhost:3000/api/zones');
+    const getZonesJson = await getZones.json();
+
+    this.setState({
+      selectedZone: getZonesJson.length > 0 ? getZonesJson[0].name : '',
+      zones: getZonesJson,
+      initialZones: getZonesJson,
+    })
   }
 
   handleClick() {
@@ -25,20 +34,22 @@ class SelectZone extends React.Component {
 
   handleChange(position) {
     this.setState({
-      selectedZone: this.zones[position],
+      selectedZone: this.state.zones[position].name,
       active: false,
       inputValue: "",
-      zones: this.zones,
+      zones: this.state.initialZones,
     })
   }
 
-  filterZones (e) {
+  filterZones(e) {
     const value = e.target.value;
-    const  result = this.state.zones.filter(z => z.toLowerCase().indexOf(value.toLowerCase()) > -1);
+    const result = this.state.initialZones.filter(z => {
+      return z.name.toLowerCase().indexOf(value.toLowerCase()) > -1
+    });
     this.setState({
       inputValue: value,
       zones: result,
-    }) 
+    })
   }
 
   render() {
@@ -54,16 +65,16 @@ class SelectZone extends React.Component {
             : styles.listContainer
         }
         >
-          <input 
-          type="text" 
-          placeholder="buscar ciudad" 
-          onChange={(e)=> this.filterZones(e)}
-          value={inputValue}
+          <input
+            type="text"
+            placeholder="buscar ciudad"
+            onChange={(e) => this.filterZones(e)}
+            value={inputValue}
           />
           <ul>
             {zones.map((zone, index) => {
               return (
-                <li key={index} onClick={() => this.handleChange(index)}>{zone}</li>
+                <li key={index} onClick={() => this.handleChange(index)}>{zone.name}</li>
               )
             })}
           </ul>

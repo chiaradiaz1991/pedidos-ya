@@ -6,11 +6,9 @@ class ZoneController {
 
   async add(req,res) {
     const body = req.body;
-    Console.log(body, 'HOLA BODY')
     if (body && body.name) {
       const addZone = await this.zoneService.add(body);
       return res.sendStatus(201)
-      console.log(body, 'BODY')
     } else {
       return res.sendStatus(400)
     } 

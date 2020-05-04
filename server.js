@@ -12,7 +12,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const ZoneController = require("./controllers/ZoneController");
 const ZoneService = require("./services/ZoneServices");
-const ZonesInstance = new ZoneController(new ZoneService());
+const ZoneInstance = new ZoneController(new ZoneService());
 
 app.prepare().then(() => {
   const server = express();
@@ -36,9 +36,8 @@ app.prepare().then(() => {
     return app.render(req, res, "/list")
   });
 
-  server.get("/api/zones", (req, res) => ZonesInstance.get(req, res));
-  // server.get("/api/zones/:id", (req, res) => ZonesInstance.getById(req, res));
-  server.post("api/zones", (req, res)=> ZonesInstance.add(req, res))
+  server.get("/api/zones", (req, res) => ZoneInstance.get(req, res));
+  server.post("/api/zones", (req, res) => ZoneInstance.add(req, res));
 
   server.get("*", (req, res) => {
     return handle(req, res);

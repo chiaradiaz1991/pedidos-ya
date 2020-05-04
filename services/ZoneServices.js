@@ -1,5 +1,5 @@
 
-const Zone = require('../schema/Zone')
+const Zone = require("../models/Zone");
 
 class ZoneServices {
   add(data) {
